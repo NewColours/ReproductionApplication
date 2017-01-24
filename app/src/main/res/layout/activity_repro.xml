@@ -1,0 +1,30 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/repro_content">
+
+    <com.yalantis.ucrop.view.GestureCropImageView
+        android:id="@+id/repro_image"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:keepScreenOn="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/repro_fab"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:fabSize="normal"
+        app:elevation="4dp"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_anchor="@id/repro_image"
+        app:layout_anchorGravity="bottom|right"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.design.widget.CoordinatorLayout>
