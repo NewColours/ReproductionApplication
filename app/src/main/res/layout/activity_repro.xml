@@ -4,6 +4,8 @@
              xmlns:app="http://schemas.android.com/apk/res-auto"
              android:id="@+id/repro_content">
 
+    <!-- NOTE: Using a RelativeLayout as the root view makes no difference -->
+
     <com.yalantis.ucrop.view.GestureCropImageView
         android:id="@+id/repro_image"
         android:layout_alignParentLeft="true"
